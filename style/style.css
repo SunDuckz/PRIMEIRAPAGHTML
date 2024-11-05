@@ -185,11 +185,23 @@
             }
             
             .table-box{
-                width: 60%;
-                border-right: 1px solid;
+                width: 55%;
+                
                 padding-right: 45px;
                 margin-right: auto;
                 overflow-x: auto;
+                
+            }
+
+            .line{
+                height: auto;
+                border-left: 1px solid black;
+                padding-left: 7px;
+                padding-right: 7px;
+            }
+            .overflow{
+                
+                width: 750px;
             }
             .table{
                 border-spacing: 0px;
@@ -216,6 +228,11 @@
                 height: 24px;
                 border-right:1px dotted white
                 
+            }
+            .ge-text{
+                font-weight: bold;
+                font-size: 20px;
+
             }
 
             .stadium-name{
@@ -250,10 +267,13 @@
                 margin-right: 2px;
             }
             
-
+            .ranking{
+                font-weight: bold;
+                color: aqua;
+            }
 
             .games{
-                width: 30%;
+                width: 35%;
 
             }
             .round-selection-bar-arrow{
@@ -277,6 +297,8 @@
             .game{
                 display: flex;
                 flex-direction: column;
+                margin-top: 5px;
+                border-bottom:1px solid lightgray;
             }
             .place-time{
                 display: flex;
@@ -298,3 +320,46 @@
                 margin-left:5px;
                 margin-right:5px;
             }
+
+            @media (max-width: 767px) { 
+                .info-box{
+                    display: block;
+                }
+                .line{
+                    display: none;
+                };
+                .table-box{
+                    width: 90%
+                }
+                .games{
+                    width: 90%;
+                }
+                .list-headers{
+                    overflow-x: auto;
+                }
+                .shield{
+                    display: none;
+                }
+                .barra-buscar form{
+                    width: 20px;
+                    height: 20px;    
+                    background-color: unset;                
+                }
+
+                .barra-buscar input{
+                    display: none;
+                }
+                .divider{
+                    display: none;
+                }
+                .container-right{
+                    display: none;
+                }
+                .menu-nav div{
+                    display: none;
+                }
+                .table-box{
+                    width: 90%;
+                }
+
+             }
